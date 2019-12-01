@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>GCP 4 Data Science</title>
+    <meta property="og:title" content="GCP 4 Data Science" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://fchouteau.github.io/isae-practical-gcp/featured-slide.jpg" />
+    <meta property="og:url" content="https://fchouteau.github.io/isae-practical-gcp" />
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/solarized.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/solarized-light.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section ><section data-markdown><script type="text/template">
+
+# Parting words
+
+</script></section><section data-markdown><script type="text/template">
+
+### What have we learned ?
+
+- ...Virtualisation, Cloud Computing
+- ...Google Cloud Platform, VM, SSH
+- ...Docker
+- ...Useful ML services on the GCP
+
+</script></section><section data-markdown><script type="text/template">
+
+### When will we be applying it ? 
+
+- This afternoon: You can do the DL class in a AI notebook
+- Next week: BE Deep Learning & Satellite Imagery
+- During the spark class...
+- During the hackathon in 2020
+
+</script></section><section data-markdown><script type="text/template">
+
+### BEFORE LEAVING
+
+- DELETE INSTANCES (except the AI Notebook you will use this afternoon)
+- DELETE OBJECTS ON GOOGLE STORAGE
+- DELETE DOCKER IMAGES FROM REGISTRY : https://cloud.google.com/container-registry/docs/managing#deleting_images
+
+</script></section><section data-markdown><script type="text/template">
+
+Feedback welcome ! 
+
+![](https://media.giphy.com/media/aMzFQ7nULrguA/giphy.gif)
+
+</script></section><section data-markdown><script type="text/template">
+
+See you next week
+
+![](https://media.giphy.com/media/14ut8PhnIwzros/giphy.gif)
+
+</script></section><section data-markdown><script type="text/template">
+
+![](https://media.giphy.com/media/lD76yTC5zxZPG/giphy.gif)
+</script></section></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"transition":"fade","transitionSpeed":"default","controls":false}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
