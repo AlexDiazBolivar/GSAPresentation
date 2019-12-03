@@ -1,5 +1,5 @@
 rm -rf ../docs
-cd docs && reveal-md . --css static/style.css --static=../../docs --static-dirs=static --absolute-url https://fchouteau.github.io/isae-practical-gcp
+cd docs && reveal-md . --css static/style.css --static=../../docs --static-dirs=static --absolute-url https://alexdiazbolivar.github.io/GSAPresentation
 cp static/style.css ../../docs/css/style.css
 cp 0_index.html ../../docs/index.html
 sed -i 's|<link rel="stylesheet" href="/css/theme/black.css" id="theme" />|<link rel="stylesheet" href="/css/theme/white.css" />|g' ../../docs/index.html
@@ -10,4 +10,5 @@ sed -i 's|<link rel="stylesheet" href="./_assets/static/style.css" />|<link rel=
 sed -i 's|<link rel="stylesheet" href="./_assets/static/style.css" />|<link rel="stylesheet" href="./css/style.css" />|g' ../../docs/2_docker.html
 sed -i 's|<link rel="stylesheet" href="./_assets/static/style.css" />|<link rel="stylesheet" href="./css/style.css" />|g' ../../docs/3_gcp_4_data_science.html
 sed -i 's|<link rel="stylesheet" href="./_assets/static/style.css" />|<link rel="stylesheet" href="./css/style.css" />|g' ../../docs/4_conclusion.html
+sed -i 's|<link rel="stylesheet" href="./_assets/static/style.css" />|<link rel="stylesheet" href="./css/style.css" />|g' ../../docs/SlidesGSA.html
 cd ..
