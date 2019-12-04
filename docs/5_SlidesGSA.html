@@ -127,26 +127,41 @@ $$M_i(t) = \dfrac{m_i(t)}{\sum_j^N m_j(t)}$$
 </div>
 </div>
 
-</script></section></section><section  data-markdown><script type="text/template">
+</script></section></section><section ><section data-markdown><script type="text/template">
 
-### COMPARATION OF THE ALGORITHM
+### COMPARATION OF THE ALGORITHM 
+- Extracted directly from the **paper**
+> <small>GSA: A Gravitational Search Algorithm. Esmat Rashedi, Hossein Nezamabadi. University of Kerman</small>
 
-Extracted from the same reference paper as we study 
+- PSO: Particle Swarm Optimization
+- GA: Genetic Algorithm 
 
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section data-markdown><script type="text/template">
+<div class="container">
+<div class="col">
+<img src="static/img/ComparationF10.png" height="370px"/>
+</div>
+<div class="col">
+<img src="static/img/ComparationF12.png" height="370px"/>
+</div>
+</div>
+<small>$$F_{10}(X) = -20 exp \left(-0.2\sqrt{\dfrac{1}{n}\sum_{1}^n x_i^2}\right) - exp \left(\dfrac{1}{n}\sum{1}^n \cos (2\pi x_i)\right) + 20 + e$$</small>
+<small>$$F_{12} = \dfrac{\pi}{4}\left(10\sin(\pi y_1) + \sum_{i-1}^{n-1}(y_i-1)^2(1+10\sin^2(\pi y_{i+1}))\right) + \sum_{i-1}^n u(x_i, 10, 100, 4)$$</small>
+
+</script></section></section><section ><section data-markdown><script type="text/template">
 
 ### CONCLUSION ...
 
 - The gravitational force is a way of transferring information between different masses.<!-- .element: class="fragment" data-fragment-index="1" -->
 - A local search (e.g. gradient descent, bfgs) should be done after running the GSA <!-- .element: class="fragment" data-fragment-index="2" -->
-- The results obtained by GSA in most cases provide superior results and in all cases are comparable with PSO, RGA and CFO <!-- .element: class="fragment" data-fragment-index="3" -->
+- The results obtained by GSA in most cases provide superior results and in all cases are comparable with PSO and GA <!-- .element: class="fragment" data-fragment-index="3" -->
 - Using plots with a good animation seem to be a better algorithm <!-- .element: class="fragment" data-fragment-index="4" -->
 
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section data-markdown><script type="text/template">
 
 
 ### ''le mieux est l’ennemi du bien''
-<small align="right">Montesquieu</small></script></section></div>
+<small align="right">Montesquieu</small></script></section></section></div>
     </div>
 
     <script src="./js/reveal.js"></script>

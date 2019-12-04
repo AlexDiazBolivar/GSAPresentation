@@ -13,21 +13,26 @@
 /*********************************************
   * GLOBAL STYLES
   *********************************************/
-body {
+
+/*body {
     background-image: linear-gradient(to top, #152637, rgb(4, 11, 48) 60%);
     background-color: rgb(103, 58, 183);
-}
+}*/
+
+body {
+  background: #fdf6e3;
+  background-color: #fdf6e3; }
 
 .reveal {
     font-family: 'Fira Sans', sans-serif;
     font-size: 32px;
     font-weight: normal;
-    color: #fff;
+    color: #657b83;
 }
 
 ::selection {
     color: #fff;
-    background: #bae3aa;
+    background: #d33682;
     text-shadow: none;
 }
 
@@ -47,7 +52,7 @@ body {
 .reveal h5,
 .reveal h6 {
     margin: 0 0 20px 0;
-    color: #fff;
+    color: #586e75;
     font-family: 'Lato', 'Fira Sans', cursive;
     font-weight: 600;
     line-height: 1.2;
